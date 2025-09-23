@@ -17,7 +17,6 @@ This is the client application for a POS terminal on Android.
 
    ```bash
    git clone https://github.com/KirilHimach/POS-Terminal-Android-Client.git
-   cd your-repo
   
 2. Open the project in Android Studio and sync it.
 
