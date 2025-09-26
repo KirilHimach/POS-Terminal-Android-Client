@@ -32,11 +32,11 @@ android {
                 "proguard-rules.pro"
             )
             isDebuggable = false
-            buildConfigField(type = "String", name = "BASE_URL", value = "\"http://10.0.2.2:8080/\"")
+            buildConfigField(type = "String", name = "BASE_URL", value = "\"http://localhost:8080/\"")
         }
         debug {
             isDebuggable = true
-            buildConfigField(type = "String", name = "BASE_URL", value = "\"http://10.0.2.2:8080/\"")
+            buildConfigField(type = "String", name = "BASE_URL", value = "\"http://localhost:8080/\"")
         }
     }
     compileOptions {
@@ -62,8 +62,6 @@ dependencies {
     implementation (libs.logging.interceptor)
     implementation (libs.okhttp)
     implementation (libs.glide) //Glide
-
-    implementation(libs.bcprov.jdk18on) //Crypto
 
     implementation (libs.kotlin.reflect)
     implementation(libs.androidx.core.ktx)

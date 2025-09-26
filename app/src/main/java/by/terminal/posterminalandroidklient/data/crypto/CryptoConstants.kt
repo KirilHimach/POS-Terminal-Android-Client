@@ -12,8 +12,9 @@ internal object CryptoConstants {
     internal const val AES_GSM_ALGORITHM = "AES/GCM/NoPadding"
     internal const val AES_KEY_ALGORITHM = "AES"
     internal const val RSA_OAEP_ALGORITHM = "RSA/ECB/OAEPWithSHA-256AndMGF1Padding"
-    internal const val BC_PROVIDER = "BC"
     internal const val HMAC_SHA256_ALGORITHM = "HmacSHA256"
+    internal const val DIGEST_ALGORITHM = "SHA-256"
+    internal const val MASK_GENERATION_FUNCTION = "MGF1"
 
     internal const val AES_KEY_SIZE = 32
     internal const val IV_SIZE = 12

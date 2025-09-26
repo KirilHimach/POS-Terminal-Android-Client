@@ -13,8 +13,6 @@ import by.terminal.posterminalandroidklient.domain.models.PaymentStatus
 import by.terminal.posterminalandroidklient.domain.repositories.RemoteResult
 import by.terminal.posterminalandroidklient.utils.observeWithActivityLifecycle
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import org.bouncycastle.jce.provider.BouncyCastleProvider
-import java.security.Security
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +38,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onInitOptions() {
-        Security.addProvider(BouncyCastleProvider())
         initViewModel()
         initBinding()
         onBtnListener()
